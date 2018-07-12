@@ -745,6 +745,13 @@
       <type>tar.gz</type>
       <classifier>etc</classifier>
     </dependency>
+    <dependency>
+      <groupId>io.hawt</groupId>
+      <artifactId>hawtio-default</artifactId>
+      <version>${hawtioVersion}</version>
+      <type>war</type>
+      <scope>runtime</scope>
+    </dependency>
 
     <!-- Apache Karaf features.xml artifacts -->
     <dependency>

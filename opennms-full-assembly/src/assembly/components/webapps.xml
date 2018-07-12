@@ -63,5 +63,21 @@
       <outputDirectory>jetty-webapps/opennms-remoting</outputDirectory>
       <includes><include>org.opennms.assemblies:org.opennms.assemblies.http-remoting:war:${project.version}</include></includes>
     </dependencySet>
+
+    <!-- hawtio webapp -->
+    <dependencySet>
+      <unpack>true</unpack>
+      <useProjectArtifact>false</useProjectArtifact>
+      <useStrictFiltering>true</useStrictFiltering>
+      <useTransitiveDependencies>false</useTransitiveDependencies>
+      <outputDirectory>jetty-webapps/hawtio</outputDirectory>
+      <includes><include>io.hawt:hawtio-default:war:${hawtioVersion}</include></includes>
+      <unpackOptions>
+        <excludes>
+          <exclude>**/*log4j*.jar</exclude>
+          <exclude>**/*slf4j*.jar</exclude>
+        </excludes>
+      </unpackOptions>
+    </dependencySet>
   </dependencySets>
 </component>
