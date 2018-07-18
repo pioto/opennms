@@ -107,7 +107,7 @@ public class KafkaRpcServerManager {
                 kafkaConfig.put(key, properties.get(key));
             }
         }
-        LOG.info("KafkaRpcServerManager: initializing the Kafka producer with: {}", kafkaConfig);
+        LOG.info("initializing the Kafka producer with: {}", kafkaConfig);
         final ClassLoader currentClassLoader = Thread.currentThread().getContextClassLoader();
         try {
             // Class-loader hack for accessing the org.apache.kafka.common.serialization.ByteArraySerializer
